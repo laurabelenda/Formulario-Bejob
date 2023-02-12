@@ -1,0 +1,38 @@
+<html lang="es">
+    <head>
+        <title>Formulario</title>
+    </head>
+<body>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="index.js"></script>
+    <div class="container">
+        <div class="header">
+            <h4>Create Account</h4>
+        </div>
+        <form id="form" class="form">
+            <div class="form-control">
+                <label for="username">Nombre</label >
+                <input type="text" id="username" onkeypress="return (event.charCode > 64 && 
+                event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" />
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="username">Email</label>
+                <input type="email" id="email" />
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="username">Clave</label>
+                <input type="password" id="password" minlength="8"/>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="username">Confirme su clave</label>
+                <input type="password" id="password2"/>
+                <small>Error message</small>
+            </div>
+            <button>ENVIAR</button>
+        </form>
+    </div>
+</body>
+</html>
